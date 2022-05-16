@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+}
+
+.container-top {
+  max-width: 100%;
+  margin-bottom: 60px;
+}
+
+.container-top .top-profile {
+  width: 100%;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container-top .top-profile .profile-image {
+  position: relative;
+}
+
+.container-top .top-profile .profile-image .main-img {
+  border-radius: 50%;
+  width: 104px;
+  height: 104px;
+  -webkit-box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.7);
+          box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.7);
+}
+
+.container-top .top-profile .profile-image .profile-emoji {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 76px;
+  left: 76px;
+  -webkit-box-shadow: 0px 0px 16px rgba(79, 79, 80, 0.15);
+          box-shadow: 0px 0px 16px rgba(79, 79, 80, 0.15);
+}
+
+.container-top .top-profile .profile-image .profile-emoji .emoji {
+  width: 13px;
+  height: 13px;
+}
+
+.container-top .top-profile .profile-name {
+  margin-top: 16px;
+}
+
+.container-top .top-profile .profile-name h1 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.container-top .top-profile .profile-description {
+  max-width: 217px;
+  text-align: center;
+  margin-top: 4px;
+}
+
+.container-top .top-profile .profile-description span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #989898;
+}
+
+.container-top .top-profile .additional-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 24px;
+}
+
+.container-top .top-profile .additional-information h2 {
+  color: #0587FF;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.container-top .top-profile .additional-information img {
+  margin-top: 11px;
+}
+
+.top-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.top-content .repositories {
+  padding-bottom: 6px;
+  border-bottom: 2px solid #FD8C73;
+}
+
+.top-content .tittle-repository, .top-content .tittle-star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-content .tittle-repository h1, .top-content .tittle-star h1 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000;
+  margin-left: 11px;
+}
+
+.top-content .tittle-repository .quantity, .top-content .tittle-star .quantity {
+  background-color: #F8F8F8;
+  border: 1px solid #DBDBDB;
+  border-radius: 59px;
+  width: 40px;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 16px;
+}
+
+.top-content .tittle-repository .quantity span, .top-content .tittle-star .quantity span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #989898;
+}
+
+.container-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-search .search-filter {
+  background-color: #F8F8F8;
+  border-radius: 8px;
+  width: 90%;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 24px;
+}
+/*# sourceMappingURL=style.css.map */
