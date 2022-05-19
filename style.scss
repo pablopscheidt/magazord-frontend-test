@@ -132,13 +132,89 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    
     .search-filter {
         background-color: #F8F8F8;
         border-radius: 8px;
         width: 90%;
-        height: 56px;
         display: flex;
         align-items: center;
+        justify-content: space-between;
         margin-top: 24px;
+        padding: 12px 8px;
+
+        .filter-content {
+            display: flex;
+        
+            .type-filter , .language-filter {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 8px 24px 8px 8px;
+                margin-right: 8px;
+                border-radius: 42px;
+                background: linear-gradient(89.89deg, #0056A6 -30.01%, #0587FF 125.65%);
+
+                img {
+                    margin-right: 14px;
+                }
+
+                span {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.container-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .content {
+        margin-top: 32px;
+        width: 93%;
+        border-bottom: 1px solid #F8F8F8;
+        padding-bottom: 34px;
+        .tittle {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 21px;
+            color: #000000;
+
+            .part2 {
+                color: #0587FF;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+        }
+
+        .subtittle {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #989898;
+            margin-top: 16px;
+        }
+
+        .star-fork {
+            display: flex;
+            margin-top: 18px;
+
+            .stars , .forks {
+                display: flex;
+                margin-right: 36px;
+
+                img {
+                    margin-right: 10px;
+                }
+            }
+        }
     }
 }

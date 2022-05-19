@@ -189,13 +189,115 @@ body {
   background-color: #F8F8F8;
   border-radius: 8px;
   width: 90%;
-  height: 56px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 24px;
+  padding: 12px 8px;
+}
+
+.container-search .search-filter .filter-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-search .search-filter .filter-content .type-filter, .container-search .search-filter .filter-content .language-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 24px 8px 8px;
+  margin-right: 8px;
+  border-radius: 42px;
+  background: linear-gradient(89.89deg, #0056A6 -30.01%, #0587FF 125.65%);
+}
+
+.container-search .search-filter .filter-content .type-filter img, .container-search .search-filter .filter-content .language-filter img {
+  margin-right: 14px;
+}
+
+.container-search .search-filter .filter-content .type-filter span, .container-search .search-filter .filter-content .language-filter span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+}
+
+.container-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-content .content {
+  margin-top: 32px;
+  width: 93%;
+  border-bottom: 1px solid #F8F8F8;
+  padding-bottom: 34px;
+}
+
+.container-content .content .tittle {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.container-content .content .tittle .part2 {
+  color: #0587FF;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.container-content .content .subtittle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #989898;
+  margin-top: 16px;
+}
+
+.container-content .content .star-fork {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 18px;
+}
+
+.container-content .content .star-fork .stars, .container-content .content .star-fork .forks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 36px;
+}
+
+.container-content .content .star-fork .stars img, .container-content .content .star-fork .forks img {
+  margin-right: 10px;
 }
 /*# sourceMappingURL=style.css.map */
