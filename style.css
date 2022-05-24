@@ -11,7 +11,7 @@ body {
 
 .container-top {
   max-width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .container-top .top-profile {
@@ -105,17 +105,71 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 24px;
+  width: 100%;
 }
 
-.container-top .top-profile .additional-information h2 {
+.container-top .top-profile .additional-information .menu-informations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 8px;
+}
+
+.container-top .top-profile .additional-information .menu-informations h2 {
   color: #0587FF;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
 }
 
-.container-top .top-profile .additional-information img {
+.container-top .top-profile .additional-information .menu-informations .arrow-down {
   margin-top: 11px;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.container-top .top-profile .additional-information .menu-informations .active {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.container-top .top-profile .additional-information .informations {
+  background: #F8F8F8;
+  border-radius: 16px;
+  width: 90%;
+  padding: 0px;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.container-top .top-profile .additional-information .informations .info {
+  padding: 8px;
+}
+
+.container-top .top-profile .additional-information .informations .text-information {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #0587FF;
+}
+
+.container-top .top-profile .additional-information .show-informations {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+  padding: 8px;
 }
 
 .top-content {
