@@ -180,11 +180,6 @@ body {
       justify-content: space-around;
 }
 
-.top-content .repositories {
-  padding-bottom: 6px;
-  border-bottom: 2px solid #FD8C73;
-}
-
 .top-content .tittle-repository, .top-content .tittle-star {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -200,6 +195,10 @@ body {
   line-height: 19px;
   color: #000;
   margin-left: 11px;
+}
+
+.top-content .tittle-repository img, .top-content .tittle-repository h1, .top-content .tittle-star img, .top-content .tittle-star h1 {
+  opacity: 0.5;
 }
 
 .top-content .tittle-repository .quantity, .top-content .tittle-star .quantity {
@@ -337,21 +336,158 @@ body {
   margin-top: 16px;
 }
 
-.container-content .content .star-fork {
+.container-content .content .star-fork, .container-content .content .language-fork {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 18px;
 }
 
-.container-content .content .star-fork .stars, .container-content .content .star-fork .forks {
+.container-content .content .star-fork .stars, .container-content .content .star-fork .forks, .container-content .content .star-fork .language-starred, .container-content .content .language-fork .stars, .container-content .content .language-fork .forks, .container-content .content .language-fork .language-starred {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-right: 36px;
 }
 
-.container-content .content .star-fork .stars img, .container-content .content .star-fork .forks img {
+.container-content .content .star-fork .stars img, .container-content .content .star-fork .forks img, .container-content .content .star-fork .language-starred img, .container-content .content .language-fork .stars img, .container-content .content .language-fork .forks img, .container-content .content .language-fork .language-starred img {
   margin-right: 10px;
+}
+
+.content-starreds {
+  display: none;
+}
+
+.content-repositories {
+  display: none;
+}
+
+.show-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.show-top-content {
+  padding-bottom: 6px;
+  border-bottom: 2px solid #FD8C73;
+}
+
+.show-top-content .tittle-repository img, .show-top-content .tittle-repository h1, .show-top-content .tittle-star img, .show-top-content .tittle-star h1 {
+  opacity: 1 !important;
+}
+
+.open-filter {
+  -webkit-transform: translateY(0%) !important;
+          transform: translateY(0%) !important;
+}
+
+.filter-type, .filter-language {
+  position: fixed;
+  background-color: #fff;
+  height: 90%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+
+.filter-type::after, .filter-language::after {
+  content: "";
+  position: absolute;
+  background: #C4C4C4;
+  border-radius: 5px;
+  width: 100px;
+  height: 8px;
+  top: 16px;
+  left: 37%;
+  right: 37%;
+}
+
+.filter-type .container-filters, .filter-language .container-filters {
+  padding: 24px;
+}
+
+.filter-type .title-filter, .filter-language .title-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 36px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.filter-type .checkboxes, .filter-language .checkboxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  padding: 16px 18px;
+  list-style: none;
+}
+
+.filter-type .checkboxes li, .filter-language .checkboxes li {
+  width: 100%;
+  margin-bottom: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filter-type .checkboxes li input, .filter-language .checkboxes li input {
+  width: 20px;
+  height: 20px;
+  margin-right: 16px;
+}
+
+.container-geral {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.over-active {
+  overflow: hidden;
+}
+
+.over-active .overlay {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
