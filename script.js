@@ -1,11 +1,34 @@
 $( document ).ready( function() {
     "use strict";
 
-    //Fazer aparecer as informações no click
-    $('.menu-informations').on('click', function() {
-        $('.menu-informations .arrow-down').toggleClass('active');
-        $('.informations').toggleClass('show-informations');
-    });
+    if(window.innerWidth < 481){ //mobiles
+        //Fazer aparecer as informações no click
+        $('.menu-informations').on('click', function() {
+            $('.menu-informations .arrow-down').toggleClass('active');
+            $('.informations').toggleClass('show-informations');
+        });
+        
+        //abrir a parte de pesquisa e retirar os filtros
+        $('#input-search').focus(function(){
+            $(this).attr('placeholder','Type something here...')
+            $('.filter-content').css('display','none');
+            $('.search-area').css('flex-direction','row-reverse')
+        });
+        $('#input-search').focusout(function(){
+            $(this).removeAttr('placeholder','Type something here...')
+            $('.filter-content').css('display','flex');
+            $('.search-area').css('flex-direction','row')
+        });
+
+        $('.lupa').on('click', function(){
+            $('#input-search').focus();
+        });
+    }
+
+    if(window.innerWidth < 769) { //tablets
+        $('#input-search').attr('placeholder','Search here');
+    }
+
     //Fazer a troca entre a parte dos repositorios e das estrelas
     $('.repositories').on('click', function() {
         $('.content-repositories').addClass('show-content');
@@ -49,20 +72,5 @@ $( document ).ready( function() {
             $('.filter-type').removeClass('open-filter');
             $('html').removeClass('over-active');
     }); 
-    //abrir a parte de pesquisa e retirar os filtros
-    $('#input-search').focus(function(){
-        $(this).attr('placeholder','Type something here...')
-        $('.filter-content').css('display','none');
-        $('.search-area').css('flex-direction','row-reverse')
-    });
-    $('#input-search').focusout(function(){
-        $(this).removeAttr('placeholder','Type something here...')
-        $('.filter-content').css('display','flex');
-        $('.search-area').css('flex-direction','row')
-    });
-
-    $('.lupa').on('click', function(){
-        $('#input-search').focus();
-    });
 })
 

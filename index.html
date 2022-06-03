@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-3.4.0.js"></script>
@@ -11,6 +11,21 @@
     <title>Magazord Test</title>
 </head>
 <body>
+    <header>
+        <div class="container-header">
+            <div class="header-left">
+                <div class="github-logo">
+                    <img src="github.svg" alt="github logo">
+                </div>
+                <span class="span1">/</span>
+                <span class="span2">Profile</span>
+            </div>
+            <div class="header-right">
+                <input type="text" placeholder="Search a github profile here..">
+                <button type="submit"><img src="search-icon.svg" alt="lupa"></button>
+            </div>
+        </div>
+    </header>
     <div class="container-geral">
         <div class="container-top">
             <div class="top-profile">
@@ -61,283 +76,285 @@
             </div>
 
         </div>
-        <div class="top-content">
-            <div class="repositories show-top-content">
-                <div class="tittle-repository">
-                    <img src="book.svg" alt="book">
-                    <h1>Repositories</h1>
-                    <div class="quantity">
-                        <span>81</span>
-                    </div>
-                </div>
-            </div>
-            <div class="starred">
-                <div class="tittle-star">
-                    <img src="star.svg" alt="star">
-                    <h1>Starred</h1>
-                    <div class="quantity">
-                        <span>12</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-search">
-            <div class="search-filter">
-                <div class="filter-content">
-                    <div class="type-filter">
-                        <img src="arrow-filter.svg" alt="arrow">
-                        <span>Type</span>
-                    </div>
-                    <div class="language-filter">
-                        <img src="arrow-filter.svg" alt="arrow">
-                        <span>Language</span>
-                    </div>
-                </div>
-                <div class="search-area">
-                    <input content="initial-scale=1, maximum-scale=1" type="text" id="input-search">
-                    <img class="lupa" src="search-icon.svg" alt="search icon">
-                </div>
-            </div>
-        </div>
-        <div class="container-content content-repositories show-content">
-            <div class="content">
-                <h2 class="tittle">
-                    <span class="part1">Node</span>
-                    /
-                    <span class="part2">Release</span>
-                </h2>
-                <div class="subtittle">
-                    <span>
-                        Node.js Foundation Release Working Group.
-                    </span>
-                </div>
-                <div class="star-fork">
-                    <div class="stars">
-                        <img src="star-complete.svg" alt="star">
+        <div class="container-main">
+            <div class="top-content">
+                <div class="repositories show-top-content">
+                    <div class="tittle-repository">
+                        <img src="book.svg" alt="book">
+                        <h1>Repositories</h1>
                         <div class="quantity">
-                            <span>
-                                1.569
-                            </span>
+                            <span>81</span>
                         </div>
                     </div>
-                    <div class="forks">
-                        <img src="fork.svg" alt="forks">
+                </div>
+                <div class="starred">
+                    <div class="tittle-star">
+                        <img src="star.svg" alt="star">
+                        <h1>Starred</h1>
                         <div class="quantity">
-                            <span>
-                                142
-                            </span>
+                            <span>12</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="content">
-                <h2 class="tittle">
-                    <span class="part1">Cordeiro</span>
-                    /
-                    <span class="part2">Angular Choosen</span>
-                </h2>
-                <div class="subtittle">
-                    <span>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis vel etiam tellus velit pellentesque scelerisque ut risus.
-                    </span>
-                </div>
-                <div class="star-fork">
-                    <div class="stars">
-                        <img src="star-complete.svg" alt="star">
-                        <div class="quantity">
-                            <span>
-                                726
-                            </span>
+            <div class="container-search">
+                <div class="search-filter">
+                    <div class="filter-content">
+                        <div class="type-filter">
+                            <img src="arrow-filter.svg" alt="arrow">
+                            <span>Type</span>
+                        </div>
+                        <div class="language-filter">
+                            <img src="arrow-filter.svg" alt="arrow">
+                            <span>Language</span>
                         </div>
                     </div>
-                    <div class="forks">
-                        <img src="fork.svg" alt="forks">
-                        <div class="quantity">
-                            <span>
-                                91
-                            </span>
+                    <div class="search-area">
+                        <input type="text" id="input-search">
+                        <img class="lupa" src="search-icon.svg" alt="search icon">
+                    </div>
+                </div>
+            </div>
+            <div class="container-content content-repositories show-content">
+                <div class="content">
+                    <h2 class="tittle">
+                        <span class="part1">Node</span>
+                        /
+                        <span class="part2">Release</span>
+                    </h2>
+                    <div class="subtittle">
+                        <span>
+                            Node.js Foundation Release Working Group.
+                        </span>
+                    </div>
+                    <div class="star-fork">
+                        <div class="stars">
+                            <img src="star-complete.svg" alt="star">
+                            <div class="quantity">
+                                <span>
+                                    1.569
+                                </span>
+                            </div>
+                        </div>
+                        <div class="forks">
+                            <img src="fork.svg" alt="forks">
+                            <div class="quantity">
+                                <span>
+                                    142
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <h2 class="tittle">
+                        <span class="part1">Cordeiro</span>
+                        /
+                        <span class="part2">Angular Choosen</span>
+                    </h2>
+                    <div class="subtittle">
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis vel etiam tellus velit pellentesque scelerisque ut risus.
+                        </span>
+                    </div>
+                    <div class="star-fork">
+                        <div class="stars">
+                            <img src="star-complete.svg" alt="star">
+                            <div class="quantity">
+                                <span>
+                                    726
+                                </span>
+                            </div>
+                        </div>
+                        <div class="forks">
+                            <img src="fork.svg" alt="forks">
+                            <div class="quantity">
+                                <span>
+                                    91
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <h2 class="tittle">
+                        <span class="part1">Teste</span>
+                        /
+                        <span class="part2">App Release 1.03</span>
+                    </h2>
+                    <div class="subtittle">
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis vel etiam tellus velit pellentesque scelerisque ut risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis vel etiam tellus velit pellentesque 
+                        </span>
+                    </div>
+                    <div class="star-fork">
+                        <div class="stars">
+                            <img src="star-complete.svg" alt="star">
+                            <div class="quantity">
+                                <span>
+                                    9.327
+                                </span>
+                            </div>
+                        </div>
+                        <div class="forks">
+                            <img src="fork.svg" alt="forks">
+                            <div class="quantity">
+                                <span>
+                                    562
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="content">
-                <h2 class="tittle">
-                    <span class="part1">Teste</span>
-                    /
-                    <span class="part2">App Release 1.03</span>
-                </h2>
-                <div class="subtittle">
-                    <span>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis vel etiam tellus velit pellentesque scelerisque ut risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis vel etiam tellus velit pellentesque 
-                    </span>
-                </div>
-                <div class="star-fork">
-                    <div class="stars">
-                        <img src="star-complete.svg" alt="star">
-                        <div class="quantity">
-                            <span>
-                                9.327
-                            </span>
-                        </div>
+            <div class="container-content content-starreds">
+                <div class="content">
+                    <h2 class="tittle">
+                        <span class="part1">Chamber 5.62</span>
+                        /
+                        <span class="part2">Smite and Ignite</span>
+                    </h2>
+                    <div class="subtittle">
+                        <span>
+                            Node.js Foundation Release Working Group.
+                        </span>
                     </div>
-                    <div class="forks">
-                        <img src="fork.svg" alt="forks">
-                        <div class="quantity">
-                            <span>
-                                562
-                            </span>
+                    <div class="language-fork">
+                        <div class="language">
+                            <div class="language-starred">
+                                <span>
+                                    C++
+                                </span>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-content content-starreds">
-            <div class="content">
-                <h2 class="tittle">
-                    <span class="part1">Chamber 5.62</span>
-                    /
-                    <span class="part2">Smite and Ignite</span>
-                </h2>
-                <div class="subtittle">
-                    <span>
-                        Node.js Foundation Release Working Group.
-                    </span>
-                </div>
-                <div class="language-fork">
-                    <div class="language">
-                        <div class="language-starred">
-                            <span>
-                                C++
-                            </span>
-                        </div>
-                    </div>
-                    <div class="forks">
-                        <img src="fork.svg" alt="forks">
-                        <div class="quantity">
-                            <span>
-                                526
-                            </span>
+                        <div class="forks">
+                            <img src="fork.svg" alt="forks">
+                            <div class="quantity">
+                                <span>
+                                    526
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="content">
-                <h2 class="tittle">
-                    <span class="part1">BNB</span>
-                    /
-                    <span class="part2">Vandal</span>
-                </h2>
-                <div class="subtittle">
-                    <span>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis vel etiam tellus velit pellentesque scelerisque ut risus.
-                    </span>
-                </div>
-                <div class="language-fork">
-                    <div class="language">
-                        <div class="language-starred">
-                            <span>
-                                Python
-                            </span>
+                <div class="content">
+                    <h2 class="tittle">
+                        <span class="part1">BNB</span>
+                        /
+                        <span class="part2">Vandal</span>
+                    </h2>
+                    <div class="subtittle">
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis vel etiam tellus velit pellentesque scelerisque ut risus.
+                        </span>
+                    </div>
+                    <div class="language-fork">
+                        <div class="language">
+                            <div class="language-starred">
+                                <span>
+                                    Python
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="content">
-                <h2 class="tittle">
-                    <span class="part1">llikatsni</span>
-                    /
-                    <span class="part2">Operator</span>
-                </h2>
-                <div class="subtittle">
-                    <span>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis vel etiam tellus velit pellentesque scelerisque ut risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis vel etiam tellus velit pellentesque 
-                    </span>
-                </div>
-                <div class="language-fork">
-                    <div class="language">
-                        <div class="language-starred">
-                            <span>
-                                JavaScript
-                            </span>
-                        </div>
+                <div class="content">
+                    <h2 class="tittle">
+                        <span class="part1">llikatsni</span>
+                        /
+                        <span class="part2">Operator</span>
+                    </h2>
+                    <div class="subtittle">
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis vel etiam tellus velit pellentesque scelerisque ut risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis vel etiam tellus velit pellentesque 
+                        </span>
                     </div>
-                    <div class="forks">
-                        <img src="fork.svg" alt="forks">
-                        <div class="quantity">
-                            <span>
-                                312
-                            </span>
+                    <div class="language-fork">
+                        <div class="language">
+                            <div class="language-starred">
+                                <span>
+                                    JavaScript
+                                </span>
+                            </div>
+                        </div>
+                        <div class="forks">
+                            <img src="fork.svg" alt="forks">
+                            <div class="quantity">
+                                <span>
+                                    312
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div draggable="true" class="filter-type">
-            <div class="container-filters">
-                <div class="title-filter">
-                    <h3>
-                        Type
-                    </h3>
-                    <div class="close-filter">
-                        <img src="X-close.svg" alt="X">
+            <div class="filter-type">
+                <div class="container-filters">
+                    <div class="title-filter">
+                        <h3>
+                            Type
+                        </h3>
+                        <div class="close-filter">
+                            <img src="X-close.svg" alt="X">
+                        </div>
                     </div>
+                    <ul class="checkboxes">
+                        <li>
+                        <input rel="typeFilter" type="checkbox" value="All" id="All">
+                        <label for="All">All</label>
+                        </li>
+                        <li>
+                        <input rel="typeFilter" type="checkbox" value="Sources" id="Sources">
+                        <label for="Sources">Sources</label>
+                        </li>
+                        <li>
+                        <input rel="typeFilter" type="checkbox" value="Forks" id="Forks">
+                        <label for="Forks">Forks</label>
+                        </li>
+                        <li>
+                        <input rel="typeFilter" type="checkbox" value="Archived" id="Archived">
+                        <label for="Archived">Archived</label>
+                        </li>
+                        <li>
+                        <input rel="typeFilter" type="checkbox" value="Mirrors" id="Mirrors">
+                        <label for="Mirrors">Mirrors</label>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="checkboxes">
-                    <li>
-                    <input rel="typeFilter" type="checkbox" value="All" id="All">
-                    <label for="All">All</label>
-                    </li>
-                    <li>
-                    <input rel="typeFilter" type="checkbox" value="Sources" id="Sources">
-                    <label for="Sources">Sources</label>
-                    </li>
-                    <li>
-                    <input rel="typeFilter" type="checkbox" value="Forks" id="Forks">
-                    <label for="Forks">Forks</label>
-                    </li>
-                    <li>
-                    <input rel="typeFilter" type="checkbox" value="Archived" id="Archived">
-                    <label for="Archived">Archived</label>
-                    </li>
-                    <li>
-                    <input rel="typeFilter" type="checkbox" value="Mirrors" id="Mirrors">
-                    <label for="Mirrors">Mirrors</label>
-                    </li>
-                </ul>
             </div>
-        </div>
-        <div class="filter-language">
-            <div class="container-filters">
-                <div class="title-filter">
-                    <h3>
-                        Language
-                    </h3>
-                    <div class="close-filter">
-                        <img src="X-close.svg" alt="X">
+            <div class="filter-language">
+                <div class="container-filters">
+                    <div class="title-filter">
+                        <h3>
+                            Language
+                        </h3>
+                        <div class="close-filter">
+                            <img src="X-close.svg" alt="X">
+                        </div>
                     </div>
+                    <ul class="checkboxes">
+                        <li>
+                        <input rel="typeFilter" type="checkbox" value="All" id="All2">
+                        <label for="All2">All</label>
+                        </li>
+                        <li>
+                        <input rel="typeFilter" type="checkbox" value="Java" id="Java">
+                        <label for="Java">Java</label>
+                        </li>
+                        <li>
+                        <input rel="typeFilter" type="checkbox" value="TypeScript" id="TypeScript">
+                        <label for="TypeScript">TypeScript</label>
+                        </li>
+                        <li>
+                        <input rel="typeFilter" type="checkbox" value="HTML" id="HTML">
+                        <label for="HTML">HTML</label>
+                        </li>
+                        <li>
+                        <input rel="typeFilter" type="checkbox" value="CSS" id="CSS">
+                        <label for="CSS">CSS</label>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="checkboxes">
-                    <li>
-                    <input rel="typeFilter" type="checkbox" value="All" id="All2">
-                    <label for="All2">All</label>
-                    </li>
-                    <li>
-                    <input rel="typeFilter" type="checkbox" value="Java" id="Java">
-                    <label for="Java">Java</label>
-                    </li>
-                    <li>
-                    <input rel="typeFilter" type="checkbox" value="TypeScript" id="TypeScript">
-                    <label for="TypeScript">TypeScript</label>
-                    </li>
-                    <li>
-                    <input rel="typeFilter" type="checkbox" value="HTML" id="HTML">
-                    <label for="HTML">HTML</label>
-                    </li>
-                    <li>
-                    <input rel="typeFilter" type="checkbox" value="CSS" id="CSS">
-                    <label for="CSS">CSS</label>
-                    </li>
-                </ul>
             </div>
         </div>
         <div class="overlay"></div>
