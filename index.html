@@ -94,7 +94,8 @@
                     </div>
                 </div>
                 <div class="search-area">
-                    <img src="search-icon.svg" alt="search icon">
+                    <input type="search" id="input-search">
+                    <label for="input-search"><img src="search-icon.svg" alt="search icon"></label>
                 </div>
             </div>
         </div>
@@ -271,7 +272,7 @@
                 </div>
             </div>
         </div>
-        <div class="filter-type">
+        <div draggable="true" class="filter-type">
             <div class="container-filters">
                 <div class="title-filter">
                     <h3>
@@ -317,8 +318,8 @@
                 </div>
                 <ul class="checkboxes">
                     <li>
-                    <input rel="typeFilter" type="checkbox" value="All" id="All">
-                    <label for="All">All</label>
+                    <input rel="typeFilter" type="checkbox" value="All" id="All2">
+                    <label for="All2">All</label>
                     </li>
                     <li>
                     <input rel="typeFilter" type="checkbox" value="Java" id="Java">

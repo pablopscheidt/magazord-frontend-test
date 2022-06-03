@@ -210,6 +210,26 @@ body {
                 }
             }
         }
+
+        .search-area {
+            display: flex;
+            align-items: center;
+            width: 100%;
+
+            #input-search {
+                border: none;
+                height: 32px;
+                width: 90%;
+                outline: none;
+                background-color: #f8f8f8;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 16px;
+            }
+            #input-search:focus {
+                margin-left: 20px;
+            }
+        }
     }
 }
 
@@ -299,6 +319,7 @@ body {
     transform: translateY(100%);
     transition: all 0.5s ease;
     z-index: 1;
+    cursor: move;
 
     &::after {
         content: "";
@@ -314,6 +335,7 @@ body {
 
     .container-filters {
         padding: 24px;
+        cursor: move;
     }
 
     .title-filter {
