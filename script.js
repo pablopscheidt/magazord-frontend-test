@@ -61,4 +61,8 @@ $( document ).ready( function() {
         $('.search-area').css('flex-direction','row')
     });
 
+    $('.lupa').on('click', function(){
+        $('#input-search').focus();
+    });
 })
+
