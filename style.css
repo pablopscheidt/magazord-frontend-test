@@ -313,6 +313,10 @@ body {
   line-height: 16px;
 }
 
+.container-search .search-filter .search-area #input-search img {
+  display: none;
+}
+
 .container-search .search-filter .search-area #input-search:focus {
   margin-left: 20px;
 }
